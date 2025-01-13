@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+ </head>
+ <marquee class="school">
+    GENIUS SR.SEC.SCHOOL,DHIGAWA MANDI
+ </marquee>
+ <video height="500px" width="100%" autoplay controls>
+    <source src="video.html/WhatsApp Video 2025-01-13 at 19.02.26_936bec85.mp4">
+ </video>
+ <br><br>
+ <div class="container"> 
+  <div class="right">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.WEgbnLrJrtraW87VtQIrSgAAAA&pid=Api&P=0&h=180">
+  </div>
+  <div class="left">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.AxYitaqpO9iyloaGAhuENQHaGU&pid=Api&P=0&h=180">
+  </div>
+</div>
+<br><br>
+<div class="container2"> 
+<button class="tablink" onclick="openpage('home',this,'yellow')">home</button>
+<button class="tablink" onclick="openpage('datesheet',this,'purple')">datesheet</button>
+<button class="tablink" onclick="openpage('fees strutcure',this,'black')">fees structure</button>
+<button class="tablink" onclick="openpage('teachers details',this,'gray')">teachers details</button>
+<br>
+<button class="tablink" onclick="openpage('images',this,'darkblue')">images</button>
+<button class="tablink" onclick="openpage('videos',this,'orange')">videos</button>
+<button class="tablink" onclick="openpage('news',this,'blue')">news</button>
+<button class="tablink" onclick="openpage('class details',this,'pink')">class details</button>
+</div>
+<div id="home" class=" tabcontent">
+  tghhh
+</div>
+<div id="datesheet" class=" tabcontent">
+  tghhhjk,bn
+</div>
+<div id="fees structure" class=" tabcontent">
+  tghhh677
+</div>
+<div id="teachers details" class=" tabcontent">
+  tghhhyyh
+</div>
+<div id="images" class=" tabcontent">
+  tghhh
+</div>
+<div id="videos" class=" tabcontent">
+  <video controls>
+    <source src="video.html/WhatsApp Video 2025-01-13 at 19.02.26_936bec85.mp4"
+  </video>
+</div>
+<div id="news" class=" tabcontent">
+  tghhh
+</div>
+<div id="class details" class=" tabcontent">
+  tghhh
+</div>
+
+  <body>
+     <style>
+   body{
+      background: linear-gradient(45deg,purple,green,yellow,pink,blue);
+      background-size: 300% 300%;
+  animation: color infinite ease-in-out infinite;
+    
+  }
+   
+
+  @keyframes color{
+      0%{
+          background-position: 0 50%;
+      }
+      50%{
+          background-position: 100% 50%;
+      }
+      100%{
+          background-position: 0 50%;
+      }
+  }
+  .container{
+    grid-template-columns: 5cm;
+    display: flex;
+    gap: 5cm;
+    border: 5cm;
+  }
+  .right{
+text-align: right;
+border: 5cm;
+  }
+   .left{
+    text-align: left;
+    border: 5cm;
+   }
+   .container2{
+    display: flex;
+    color: rgb(to right r g b);
+   }
+   .tablink{
+     color: blue;
+    color: green;
+    display: table-column;
+    padding: 14px 16px;
+    width:25%;
+    border: none;
+   }
+   .tablink:hover{
+     background-color: aquamarine;
+    transition: 0.5s;
+   }
+   .tabcontent{
+    color: aliceblue;
+    display: flex;
+   }
+   #home{
+    background-color: antiquewhite;
+   }
+   #news{
+    background-color: bisque;
+   }
+   #videos{
+    background-color: black;
+   }
+    
+    </style>
+    <script>
+      function openpage(pagename,elmnt,color){
+        var i,tabcontent,tablink;
+        tabcontent=document.getElementsByClassName("tabcontent");
+        for(i=0; i<tabcontent.length;i++){
+          tabcontent[i].style.display="none";
+        }
+        tablink=document.getElementsByClassName("tablink");
+        for(i=0;i<tablink.length;i++){
+          tablink[i].style.backgroundColor="";
+        }
+        document.getElementById(pagename).style.display="block";
+        elmnt.style.backgroundColor=color;
+      }
+      document.getElementById("defaultOpen").click();
+    </script>
+ </body>
+ </html>
